@@ -31,18 +31,18 @@ export function Work() {
           {caseStudies.map((study) => (
             <article
               key={study.number}
-              className="group bg-card-bg p-6 md:p-8 cursor-pointer transition-all duration-300 hover:translate-y-[-2px] border-l-[0.5px] border-transparent hover:border-teal"
+              className="group bg-card p-6 md:p-8 cursor-pointer transition-all duration-300 hover:translate-y-[-2px] border-l-[0.5px] border-transparent hover:border-accent"
             >
               <div className="flex flex-col md:flex-row md:items-center gap-6">
-                <span className="text-sm font-light text-teal tracking-wide shrink-0 w-12">
+                <span className="text-sm font-light text-accent tracking-wide shrink-0 w-12">
                   {study.number}
                 </span>
                 
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-lg md:text-xl font-light text-chrome mb-2">
+                  <h3 className="text-lg md:text-xl font-light text-foreground mb-2">
                     {study.company}
                   </h3>
-                  <p className="text-sm text-muted-text leading-relaxed">
+                  <p className="text-sm text-muted-foreground leading-relaxed">
                     {study.description}
                   </p>
                 </div>
@@ -52,13 +52,13 @@ export function Work() {
                     {study.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-[10px] uppercase tracking-[0.1em] px-2 py-1 border border-teal/50 text-teal"
+                        className="text-[10px] uppercase tracking-[0.1em] px-2 py-1 border border-accent/50 text-accent"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <ArrowUpRight className="w-5 h-5 text-muted-text group-hover:text-chrome transition-colors" />
+                  <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-foreground transition-colors" />
                 </div>
               </div>
             </article>

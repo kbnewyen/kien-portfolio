@@ -13,10 +13,10 @@ export function About() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 md:gap-24">
           <div>
-            <h2 className="text-2xl md:text-3xl font-light text-chrome mb-8 leading-tight">
+            <h2 className="text-2xl md:text-3xl font-light text-foreground mb-8 leading-tight">
               The work behind the work
             </h2>
-            <p className="text-sm text-muted-text leading-[1.8]">
+            <p className="text-sm text-muted-foreground leading-[1.8]">
               {"I'm a product manager with 8+ years shipping software. Currently at Axos Bank. Previously Mitchell International and eCapital. I'm transitioning into product design — this portfolio is part of that journey. I surf. I'm from San Diego."}
             </p>
           </div>
@@ -24,8 +24,8 @@ export function About() {
           <div className="flex flex-col justify-center">
             <ul className="flex flex-wrap gap-x-6 gap-y-3">
               {skills.map((skill, index) => (
-                <li key={skill} className="flex items-center text-sm text-muted-text">
-                  {index > 0 && <span className="mr-6 text-teal">·</span>}
+                <li key={skill} className="flex items-center text-sm text-muted-foreground">
+                  {index > 0 && <span className="mr-6 text-accent">·</span>}
                   {skill}
                 </li>
               ))}

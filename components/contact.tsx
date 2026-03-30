@@ -2,16 +2,16 @@ import Link from "next/link"
 
 export function Contact() {
   return (
-    <section id="contact" className="py-32 px-6 md:px-12 lg:px-20 border-t border-teal/20">
+    <section id="contact" className="py-32 px-6 md:px-12 lg:px-20 border-t border-accent/20">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-light text-chrome mb-10">
+        <h2 className="text-2xl md:text-3xl font-light text-foreground mb-10">
           {"Let's build something."}
         </h2>
         
         <div className="flex flex-col gap-6">
           <Link 
             href="mailto:kien@example.com" 
-            className="text-sm text-muted-text hover:text-chrome transition-colors underline underline-offset-4"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
           >
             kien@example.com
           </Link>
@@ -21,7 +21,7 @@ export function Contact() {
               href="https://linkedin.com" 
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-text hover:text-chrome transition-colors"
+              className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="LinkedIn"
             >
               <svg 
@@ -37,7 +37,7 @@ export function Contact() {
               href="https://github.com" 
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-text hover:text-chrome transition-colors"
+              className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="GitHub"
             >
               <svg 
