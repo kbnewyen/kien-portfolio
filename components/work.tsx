@@ -29,13 +29,13 @@ const caseStudies = [
 
 export function Work() {
   return (
-    <section id="work" className="py-32 px-6 md:px-12 lg:px-20">
+    <section id="work" className="py-40 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col gap-4">
           {caseStudies.map((study) => (
             <Link key={study.number} href={study.href}>
               <article
-                className="group bg-card p-6 md:p-8 cursor-pointer transition-all duration-300 hover:translate-y-[-2px] border-l-[0.5px] border-transparent hover:border-accent"
+                className="group bg-card p-6 md:p-8 cursor-pointer transition-all duration-300 hover:translate-y-[-2px] border-l-2 border-transparent hover:border-accent"
               >
               <div className="flex flex-col md:flex-row md:items-center gap-6">
                 <span className="text-sm font-light text-accent tracking-wide shrink-0 w-12">

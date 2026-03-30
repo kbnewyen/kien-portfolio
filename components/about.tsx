@@ -9,7 +9,7 @@ export function About() {
   ]
 
   return (
-    <section id="about" className="py-32 px-6 md:px-12 lg:px-20">
+    <section id="about" className="py-40 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 md:gap-24">
           <div>
@@ -22,14 +22,14 @@ export function About() {
           </div>
           
           <div className="flex flex-col justify-center">
-            <ul className="flex flex-wrap gap-x-6 gap-y-3">
+            <div className="flex flex-wrap items-center gap-y-3">
               {skills.map((skill, index) => (
-                <li key={skill} className="flex items-center text-sm text-muted-foreground">
-                  {index > 0 && <span className="mr-6 text-accent">·</span>}
+                <span key={skill} className="text-sm text-muted-foreground">
                   {skill}
-                </li>
+                  {index < skills.length - 1 && <span className="mx-3 text-accent">·</span>}
+                </span>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
       </div>
