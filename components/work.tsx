@@ -1,6 +1,7 @@
 "use client"
 
 import { ArrowUpRight } from "lucide-react"
+import Link from "next/link"
 
 const caseStudies = [
   {
@@ -8,18 +9,21 @@ const caseStudies = [
     company: "Mitchell International",
     description: "Launched a patented 0→1 product with GM. Captured significant U.S. market share in under 9 months.",
     tags: ["0→1", "Automotive", "Patent"],
+    href: "/mitchell",
   },
   {
     number: "02",
     company: "eCapital Checkout",
     description: "Redesigned the checkout flow, enabling 1-hour funding and improving conversion.",
     tags: ["Conversion", "Fintech", "0→1"],
+    href: "/ecapital-checkout",
   },
   {
     number: "03",
     company: "eCapital Third-Party Payments",
     description: "Built a third-party payments product from scratch, processing substantial transaction volume.",
     tags: ["0→1", "Payments", "Fintech"],
+    href: "/payments",
   },
 ]
 
@@ -29,10 +33,10 @@ export function Work() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col gap-4">
           {caseStudies.map((study) => (
-            <article
-              key={study.number}
-              className="group bg-card p-6 md:p-8 cursor-pointer transition-all duration-300 hover:translate-y-[-2px] border-l-[0.5px] border-transparent hover:border-accent"
-            >
+            <Link key={study.number} href={study.href}>
+              <article
+                className="group bg-card p-6 md:p-8 cursor-pointer transition-all duration-300 hover:translate-y-[-2px] border-l-[0.5px] border-transparent hover:border-accent"
+              >
               <div className="flex flex-col md:flex-row md:items-center gap-6">
                 <span className="text-sm font-light text-accent tracking-wide shrink-0 w-12">
                   {study.number}
@@ -62,6 +66,7 @@ export function Work() {
                 </div>
               </div>
             </article>
+            </Link>
           ))}
         </div>
       </div>
