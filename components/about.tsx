@@ -17,7 +17,7 @@ export function About() {
               The work behind the work
             </h2>
             <p className="text-sm text-muted-foreground leading-[1.8]">
-              {"I'm a product manager with 8+ years shipping software. Currently at Axos Bank. Previously Mitchell International and eCapital. I'm transitioning into product design — this portfolio is part of that journey. I surf. I'm from San Diego."}
+              {"PM with 8+ years primarily in fintech and automotive. Currently at Axos Bank. Previously eCapital and Mitchell International. I build with AI — this site was made with Claude, Cursor, and Vercel."}
             </p>
           </div>
           
