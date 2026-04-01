@@ -14,7 +14,7 @@ export function Hero() {
           <br />
           products
           <br />
-          <span className="text-destructive">that ship.</span>
+          <span className="text-destructive">that win.</span>
         </h1>
         <p className="mt-10 text-sm text-muted-foreground leading-relaxed max-w-md">
           8 years in software. Based in San Diego.
