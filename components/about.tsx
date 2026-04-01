@@ -1,11 +1,11 @@
 export function About() {
   const skills = [
-    "Product Strategy",
-    "UX Research",
-    "Roadmapping",
-    "Figma",
-    "React",
+    "0→1",
+    "Payments",
+    "AI",
     "Fintech",
+    "Product Strategy",
+    "Conversion",
   ]
 
   return (
