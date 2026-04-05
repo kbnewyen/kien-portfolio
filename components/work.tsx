@@ -6,24 +6,24 @@ import Link from "next/link"
 const caseStudies = [
   {
     number: "01",
-    company: "Mitchell International",
-    description: "Launched a patented 0→1 product with GM. Captured significant U.S. market share in under 9 months.",
-    tags: ["0→1", "Automotive", "Patent"],
-    href: "/mitchell",
-  },
-  {
-    number: "02",
     company: "eCapital Checkout",
     description: "Redesigned the checkout flow, enabling 1-hour funding and improving conversion.",
     tags: ["Conversion", "Fintech", "0→1"],
     href: "/ecapital-checkout",
   },
   {
-    number: "03",
+    number: "02",
     company: "eCapital Third-Party Payments",
     description: "Built a third-party payments product from scratch, processing substantial transaction volume.",
     tags: ["0→1", "Payments", "Fintech"],
     href: "/payments",
+  },
+  {
+    number: "03",
+    company: "Mitchell International",
+    description: "Launched a patented 0→1 product with GM. Captured significant U.S. market share in under 9 months.",
+    tags: ["0→1", "Automotive", "Patent"],
+    href: "/mitchell",
   },
 ]
 
