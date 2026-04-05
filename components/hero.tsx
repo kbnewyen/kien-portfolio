@@ -20,7 +20,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/55 to-black/20" />
       </div>
       {/* Left side - Text content */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 relative z-10 pt-96 md:pt-0">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 relative z-10 pt-80 md:pt-0">
         <div className="max-w-xl">
           <p className="text-xs uppercase tracking-[0.2em] text-white/60 md:text-muted-foreground mb-8">
             Product · Design · Strategy
