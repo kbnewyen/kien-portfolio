@@ -13,7 +13,7 @@ export function Contact() {
             href="mailto:hello@builtbykien.com" 
             className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
           >
-            kien@example.com
+            hello@builtbykien.com
           </Link>
           
           <div className="flex items-center gap-6">
