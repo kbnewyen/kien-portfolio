@@ -18,7 +18,7 @@ export function Contact() {
           
           <div className="flex items-center gap-6">
             <Link 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/kien-product/" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -34,7 +34,7 @@ export function Contact() {
               </svg>
             </Link>
             <Link 
-              href="https://github.com" 
+              href="https://github.com/kbnewyen" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
