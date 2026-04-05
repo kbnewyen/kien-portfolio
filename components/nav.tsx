@@ -31,7 +31,7 @@ export function Nav() {
         >
           Kien Nguyen
         </Link>
-        <div className="flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8">
           <Link 
             href="#work" 
             className="text-xs uppercase tracking-[0.15em] text-muted-foreground hover:text-foreground transition-colors"
