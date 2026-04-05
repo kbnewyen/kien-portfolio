@@ -10,7 +10,7 @@ export function Contact() {
         
         <div className="flex flex-col gap-6">
           <Link 
-            href="mailto:kien@example.com" 
+            href="mailto:hello@builtbykien.com" 
             className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
           >
             kien@example.com
