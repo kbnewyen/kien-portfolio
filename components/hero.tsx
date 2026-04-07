@@ -33,7 +33,7 @@ export function Hero() {
             <span className="text-destructive">that win.</span>
           </h1>
           <p className="mt-10 text-sm text-white/70 md:text-muted-foreground leading-relaxed max-w-md">
-            8 years in software. Based in San Diego.
+            9 years in software. Based in San Diego.
           </p>
         </div>
       </div>
