@@ -14,7 +14,7 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-16 md:gap-24">
           <div>
             <h2 className="text-2xl md:text-3xl font-light text-foreground mb-8 leading-tight">
-              The work behind the work
+              About Me
             </h2>
             <p className="text-sm text-muted-foreground leading-[1.8]">
               {"9 years primarily in fintech. Currently at Axos Bank building AI-powered experiences. Previously eCapital and Mitchell International.I guest lecture at UC San Diego Extended Studies and teach kids from underserved communities how to surf through Paddle for Peace and For Our Neighborhood. I build with AI — this site was made with Claude, Cursor, and Vercel."}
