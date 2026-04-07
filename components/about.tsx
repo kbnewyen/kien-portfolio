@@ -17,7 +17,7 @@ export function About() {
               The work behind the work
             </h2>
             <p className="text-sm text-muted-foreground leading-[1.8]">
-              {"8+ years primarily in fintech and automotive. Currently at Axos Bank. Previously eCapital and Mitchell International. I build with AI — this site was made with Claude, Cursor, and Vercel."}
+              {"9 years primarily in fintech. Currently at Axos Bank building AI-powered experiences. Previously eCapital and Mitchell International.I guest lecture at UC San Diego Extended Studies and teach kids from underserved communities how to surf through Paddle for Peace and For Our Neighborhood. I build with AI — this site was made with Claude, Cursor, and Vercel."}
             </p>
           </div>
           
