@@ -23,7 +23,7 @@ export function Hero() {
       <div className="w-full md:w-1/2 flex flex-col justify-center px-6 md:px-12 lg:px-20 relative z-10 pt-80 md:pt-0">
         <div className="max-w-xl">
           <p className="text-xs uppercase tracking-[0.2em] text-white/60 md:text-muted-foreground mb-8">
-            Product · Design · Strategy
+            Fintech · AI · Product
           </p>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-light leading-[0.95] tracking-tight text-white md:text-foreground">
             Building
