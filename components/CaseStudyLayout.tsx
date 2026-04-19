@@ -69,7 +69,21 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
           ].map((item, i) => (
             <div key={i} className="px-6 py-5 border-r border-b md:border-b-0 border-white/10 last:border-r-0">
               <p className="text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: "#5A5A50" }}>{item.label}</p>
-              <p className="text-sm font-medium leading-snug">{item.value}</p>
+              {item.label === "Stakeholders" ? (
+                <div className="flex flex-wrap gap-1.5">
+                  {item.value.split("·").map((s) => s.trim()).filter(Boolean).map((s) => (
+                    <span
+                      key={s}
+                      className="inline-block rounded-full border border-foreground/40 px-2 py-0.5 text-xs font-medium leading-snug text-foreground"
+                      style={{ backgroundColor: "transparent" }}
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              ) : (
+                <p className="text-sm font-medium leading-snug">{item.value}</p>
+              )}
             </div>
           ))}
         </div>
