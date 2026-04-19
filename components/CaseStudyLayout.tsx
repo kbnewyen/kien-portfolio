@@ -51,7 +51,7 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
           {cs.tag}
         </div>
         <h1 className="className=text-3xl md:text-4xl font-normal leading-tight mb-8">{cs.title}</h1>
-        <p className="text-lg leading-relaxed" style={{ color: "#5A5A50" }}>
+        <p className="text-sm leading-relaxed font-light max-w-lg" style={{ color: "#5A5A50" }}>
           {cs.intro}{" "}
           <span className="font-bold" style={{ color: "#EDE8DC" }}>{cs.introHighlight}</span>{" "}
           {cs.introContinued}
@@ -145,7 +145,7 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
                 <h2 className="text-xl md:text-2xl font-normal mb-6">{section.sectionTitle}</h2>
 
                 {/* Body */}
-                <p className="text-base leading-relaxed mb-8" style={{ color: "#5A5A50" }}>{section.body}</p>
+                <p className="text-sm leading-relaxed font-light mb-8" style={{ color: "#5A5A50" }}>{section.body}</p>
 
                 {/* Pull quote */}
                 {section.pullQuote && (
