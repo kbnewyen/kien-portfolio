@@ -50,7 +50,7 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
           style={{ borderColor: "#E04D1C", color: "#E04D1C" }}>
           {cs.tag}
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-8">{cs.title}</h1>
+        <h1 className="className=text-3xl md:text-4xl font-normal leading-tight mb-8">{cs.title}</h1>
         <p className="text-lg leading-relaxed" style={{ color: "#5A5A50" }}>
           {cs.intro}{" "}
           <span className="font-bold" style={{ color: "#EDE8DC" }}>{cs.introHighlight}</span>{" "}
