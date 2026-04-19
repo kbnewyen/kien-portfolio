@@ -164,7 +164,7 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
 
                 {/* Pull quote */}
                 {section.pullQuote && (
-                  <blockquote className="my-8 pl-5 border-l-2" style={{ borderColor: "#E04D1C" }}>
+                  <blockquote className="my-8 pl-5 border-l-2 py-3 pr-4" style={{ borderColor: "#E04D1C", backgroundColor: "rgba(224,77,28,0.06)" }}>
                     <p className="text-lg italic mb-2" style={{ color: "#EDE8DC" }}>"{section.pullQuote.quote}"</p>
                     <cite className="text-sm not-italic" style={{ color: "#5A5A50" }}>{section.pullQuote.attribution}</cite>
                   </blockquote>
