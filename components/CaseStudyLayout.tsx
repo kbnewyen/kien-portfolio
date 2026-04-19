@@ -60,7 +60,7 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
 
       {/* METADATA BAR */}
       <section className="max-w-3xl mx-auto px-8 pb-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 border border-white/10" style={{ backgroundColor: "#1E1E1B" }}>
+        <div className="grid grid-cols-2 md:grid-cols-4 border border-white/10" >
           {[
             { label: "Timeline", value: cs.metadata.timeline },
             { label: "Team", value: cs.metadata.team },
@@ -77,7 +77,10 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
 
       {/* IMPACT STATS */}
       <section className="max-w-3xl mx-auto px-8 pb-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 border border-white/10" style={{ backgroundColor: "#1E1E1B" }}>
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 border-t border-b border-white/10"
+          style={{ backgroundColor: "rgba(237,232,220,0.05)" }}
+        >
           {cs.stats.map((item, i) => (
             <div key={i} className="px-8 py-10 border-r border-white/10 last:border-r-0">
               <p className="text-5xl font-bold mb-3" style={{ color: "#E04D1C" }}>{item.value}</p>
