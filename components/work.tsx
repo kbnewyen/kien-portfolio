@@ -11,7 +11,7 @@ export function Work() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col gap-4">
           {caseStudies.map((study) => (
-            <Link key={study.slug} href={`/work/${study.slug}`}>
+            <Link key={study.slug} href={`/${study.slug}`}>
               <article
                 className="group bg-card p-6 md:p-8 cursor-pointer transition-all duration-300 hover:translate-y-[-2px] border-l-2 border-transparent hover:border-accent"
               >
