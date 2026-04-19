@@ -95,10 +95,20 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
         <div className="flex gap-16">
 
           {/* DESKTOP SIDE NAV */}
-          <aside className="hidden md:block w-40 shrink-0">
+          <aside className="hidden md:block w-40 shrink-0 border-r border-white/10 relative">
             <div className="sticky top-24">
               <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: "#5A5A50" }}>Sections</p>
               <ul className="space-y-3">
+                {/* Progress bar */}
+                <div className="absolute left-0 top-0 bottom-0 w-px" style={{ backgroundColor: "rgba(237,232,220,0.1)" }}>
+                  <div
+                    className="w-full transition-all duration-300"
+                    style={{
+                      backgroundColor: "#1A6B5A",
+                      height: `${((activeIndex + 1) / cs.sections.length) * 100}%`
+                    }}
+                  />
+                </div>
                 {cs.sections.map((section, i) => (
                   <li key={i}>
                     <button
