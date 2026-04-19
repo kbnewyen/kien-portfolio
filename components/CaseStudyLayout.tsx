@@ -142,7 +142,7 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
                 </div>
 
                 {/* Section title */}
-                <h2 className="text-2xl md:text-3xl font-bold mb-6">{section.sectionTitle}</h2>
+                <h2 className="text-xl md:text-2xl font-normal mb-6">{section.sectionTitle}</h2>
 
                 {/* Body */}
                 <p className="text-base leading-relaxed mb-8" style={{ color: "#5A5A50" }}>{section.body}</p>
