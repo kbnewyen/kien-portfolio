@@ -132,10 +132,10 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
               >
                 {/* Section label */}
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-xs font-semibold tracking-widest" style={{ color: "#E04D1C" }}>
+                  <span className="text-xs font-semibold tracking-widest" style={{ color: "1A6B5A" }}>
                     {section.number}
                   </span>
-                  <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#E04D1C" }}>
+                  <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: "#1A6B5A" }}>
                     — {section.title}
                   </span>
                   <div className="flex-1 h-px" style={{ backgroundColor: "#E04D1C", opacity: 0.2 }} />
