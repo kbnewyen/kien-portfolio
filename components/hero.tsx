@@ -56,7 +56,7 @@ export function Hero() {
         />
       </div>
       
-      <div className="absolute bottom-12 left-1/2 md:left-1/4 -translate-x-1/2 animate-bounce z-10">
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce z-10">
         <ChevronDown className="w-5 h-5 text-muted-foreground" />
       </div>
     </section>
