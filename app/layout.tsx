@@ -9,8 +9,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Kien Nguyen | Product & Design",
-  description: "Product manager and designer with 8+ years shipping software. Based in San Diego.",
+  title: "Kien Nguyen | Fintech · AI · Product",
+  description: "Product managerwith 9+ years of experience shipping software. Based in San Diego.",
   generator: 'v0.app',
   icons: {
     icon: [

@@ -50,8 +50,8 @@ export const caseStudies: CaseStudy[] = [
       number: "01",
       company: "Checkout — eCapital",
       description:
-        "Redesigned the checkout flow. Delivered $2M+ in new ARR and cut time-to-funding to 1 hour.",
-      tags: ["Conversion", "Fintech", "0→1"],
+        "$2M+ in new ARR — from a project that started as a simple checkout redesign.",
+      tags: ["FINTECH", "REVENUE", "0→1"],
     },
     metadata: {
       timeline: "Q2 – Q3 2023",
