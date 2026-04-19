@@ -45,7 +45,7 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
       </nav>
 
       {/* HERO */}
-      <section className="max-w-3xl mx-auto px-8 pt-16 pb-12">
+      <section className="max-w-5xl mx-auto px-8 pt-16 pb-12">
         <div className="inline-block border px-3 py-1 text-xs font-semibold tracking-widest uppercase mb-8"
           style={{ borderColor: "#E04D1C", color: "#E04D1C" }}>
           {cs.tag}
@@ -59,7 +59,7 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
       </section>
 
       {/* METADATA BAR */}
-      <section className="max-w-3xl mx-auto px-8 pb-12">
+      <section className="max-w-5xl mx-auto px-8 pb-12">
         <div className="grid grid-cols-2 md:grid-cols-4 border border-white/10" >
           {[
             { label: "Timeline", value: cs.metadata.timeline },
@@ -76,7 +76,7 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
       </section>
 
       {/* IMPACT STATS */}
-      <section className="max-w-3xl mx-auto px-8 pb-20">
+      <section className="max-w-5xl mx-auto px-8 pb-20">
         <div
           className="grid grid-cols-1 md:grid-cols-3 border-t border-b border-white/10"
           style={{ backgroundColor: "rgba(237,232,220,0.05)" }}
@@ -95,20 +95,22 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
         <div className="flex gap-16">
 
           {/* DESKTOP SIDE NAV */}
-          <aside className="hidden md:block w-40 shrink-0 border-r border-white/10 relative">
-            <div className="sticky top-24">
+          <aside className="hidden md:block w-40 shrink-0 relative">
+            {/* Teal progress bar — far left edge */}
+            <div className="absolute left-0 top-0 bottom-0 w-px" style={{ backgroundColor: "rgba(237,232,220,0.1)" }}>
+              <div
+                className="w-full transition-all duration-300"
+                style={{
+                  backgroundColor: "#1A6B5A",
+                  height: `${((activeIndex + 1) / cs.sections.length) * 100}%`
+                }}
+              />
+            </div>
+            {/* Right border */}
+            <div className="absolute right-0 top-0 bottom-0 w-px" style={{ backgroundColor: "rgba(237,232,220,0.1)" }} />
+            <div className="sticky top-24 pl-6">
               <p className="text-xs font-semibold tracking-widest uppercase mb-4" style={{ color: "#5A5A50" }}>Sections</p>
               <ul className="space-y-3">
-                {/* Progress bar */}
-                <div className="absolute left-0 top-0 bottom-0 w-px" style={{ backgroundColor: "rgba(237,232,220,0.1)" }}>
-                  <div
-                    className="w-full transition-all duration-300"
-                    style={{
-                      backgroundColor: "#1A6B5A",
-                      height: `${((activeIndex + 1) / cs.sections.length) * 100}%`
-                    }}
-                  />
-                </div>
                 {cs.sections.map((section, i) => (
                   <li key={i}>
                     <button
@@ -246,7 +248,7 @@ export default function CaseStudyLayout({ cs }: { cs: CaseStudy }) {
       {/* NEXT CASE STUDY */}
       <section className="border-t border-white/10">
         <Link href={`/${cs.next.slug}`}
-          className="max-w-3xl mx-auto px-8 py-16 flex items-center justify-between group block">
+          className="max-w-5xl mx-auto px-8 py-16 flex items-center justify-between group block">
           <div>
             <p className="text-xs font-semibold tracking-widest uppercase mb-2" style={{ color: "#5A5A50" }}>
               Next Case Study
